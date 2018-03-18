@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser.add_argument('--init', action='store_true', help='Initialise a new portfolio.')
     parser.add_argument('--coins', type=str, nargs='+', metavar='COIN', help='A list of coin symbols to initialise the new portfolio with. Ex: BTC ETH XRP')
     parser.add_argument('--portfolio', type=str, help='Name of the portfolio', default='portfolio')
-    parser.add_argument('--values', type=int, nargs='+', metavar='VALUE', help='Initial coin values. Ether a single value or a list of values, one for each coin')
+    parser.add_argument('--values', type=float, nargs='+', metavar='VALUE', help='Initial coin values. Ether a single value or a list of values, one for each coin')
     args = parser.parse_args()
     if args.init:
         assert args.coins is not None, 'No coins supplied. Use the --coins argument to generate a new portfolio'
