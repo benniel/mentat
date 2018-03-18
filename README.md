@@ -1,0 +1,2 @@
+# mentat
+Crypto trader
